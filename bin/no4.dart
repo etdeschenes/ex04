@@ -8,10 +8,9 @@ String compoundInterest(num interest, int years, num investment) {
   var rate = (1+interest);
   for (int a = 1; a < 6; a++)
     compound += 'Année $a : ' + (investment*math.pow(rate,a)).toStringAsFixed(2) + '\n';
-
   return compound;
 }
 
-void main(){
+void main() {
   print(compoundInterest(0.048,5,1000));
 }

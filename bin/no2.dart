@@ -12,9 +12,9 @@ String point(int w, int h, int l, int a){
   double endY = h / 2 + 160 * math.sin(r);
   coord += 'Coordonnées du centre du rectangle : (${centerX.floor()}, ${centerY.floor()})\n';
   coord += 'Coordonnées de fin de la ligne : (${endX.toStringAsFixed(2)}, ${endY.toStringAsFixed(2)})';
-
   return coord;
 }
-void main(){
+
+void main() {
   print(point(800,600,160,45));
 }
